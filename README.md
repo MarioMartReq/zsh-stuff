@@ -11,11 +11,21 @@ Here I maintain a collection of all the random stuff I use with ZSH.
 
 Main file for ZSH. It is not optmized by any means (it might require some changes to work in a different computer).
 
+- Plugins:
+  - git
+  - vscode
+  - kubectl
+  - kubectx (custom)
+  - zsh-syntax-highlighting (custom)
+  - zsh-autosuggestions (custom)
+- Aliases:
+  - `changetheme`: goes from the custom theme to "bobbyrussell", a much simpler one.
+
 ## [mario.zsh-theme](mario.zsh-theme) file
 
 Mario's custom ZSH theme. It is a fork from Jonathan theme, but contains some modifications:
 
-- It displays info about the kubernetes context and namespace.
+- It displays info about the kubernetes context and namespace (thanks to [kube-ps1](https://github.com/jonmosco/kube-ps1)).
 - Complete date with time zone.
 - An emoji that can be changed 😌.
 
