@@ -25,9 +25,10 @@ Main file for ZSH. It is not optmized by any means (it might require some change
 
 Mario's custom ZSH theme. It is a fork from Jonathan theme, but contains some modifications:
 
-- It displays info about the kubernetes context and namespace (thanks to [kube-ps1](https://github.com/jonmosco/kube-ps1)).
+- It displays info about the **kubernetes context and namespace** (thanks to [kube-ps1](https://github.com/jonmosco/kube-ps1)).
+- It also shows which conda env is currently active.
 - Complete date with time zone.
-- An emoji that can be changed 😌.
+- Some emojis to separate the different info sections 😌.
 
 To copy it into the `zsh`themes folder, run:
 

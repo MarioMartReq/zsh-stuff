@@ -3,9 +3,14 @@ KUBE_PS1_PREFIX=''
 KUBE_PS1_SUFFIX=''
 KUBE_PS1_SYMBOL_ENABLE=false
 KUBE_PS1_SYMBOL_PADDING=false
-KUBE_PS1_SYMBOL_COLOR=null
-KUBE_PS1_CTX_COLOR=null
-KUBE_PS1_NS_COLOR=null
+KUBE_PS1_SYMBOL_COLOR=''
+KUBE_PS1_CTX_COLOR=''
+KUBE_PS1_NS_COLOR=''
+KUBE_PS1_PREFIX_COLOR=''
+KUBE_PS1_SYMBOL_COLOR=''	
+KUBE_PS1_SUFFIX_COLOR=''
+KUBE_PS1_NS_COLOR=''
+KUBE_PS1_BG_COLOR=''
 
 function theme_precmd {
   local TERMWIDTH=$(( COLUMNS - ${ZLE_RPROMPT_INDENT:-1} ))
@@ -17,7 +22,7 @@ function theme_precmd {
   KUBE_INFO=$KUBE_INFO:gs/%{%f%}/
   DATE_INFO=$(date)
 
-  local promptsize=${#${(%):---($KUBE_INFO @ $DATE_INFO)---()--}}
+  local promptsize=${#${(%):---(@ .$KUBE_INFO @ .$CONDA_DEFAULT_ENV @ $DATE_INFO)---()--}}
   local rubypromptsize=${#${(%)$(ruby_prompt_info)}}
   local pwdsize=${#${(%):-%~}}
 
@@ -115,14 +120,13 @@ else
   PR_STITLE=""
 fi
 
-# EMOJIS_SEL=(🤔 🤠 🧐 🤪 🤫 🥸 🤓 🥺 🤑 😵 🤌🏻 🤨 💆🏻 🦧)
-# ${EMOJIS_SEL[$RANDOM % ${#EMOJIS_SEL[@]}]}
+
 # Finally, the prompt.
 PROMPT='${PR_SET_CHARSET}${PR_STITLE}${(e)PR_TITLEBAR}\
 ${PR_CYAN}${PR_ULCORNER}${PR_HBAR}${PR_GREY}(\
 ${PR_GREEN}%${PR_PWDLEN}<...<%~%<<\
 ${PR_GREY})$(ruby_prompt_info)${PR_CYAN}${PR_HBAR}${PR_HBAR}${(e)PR_FILLBAR}${PR_HBAR}${PR_GREY}(\
-${PR_CYAN}$(kube_ps1) 🤔 ${PR_YELLOW}$(date)\
+☸️  ${PR_CYAN}$(kube_ps1) 🐍${PR_CYAN} $CONDA_DEFAULT_ENV 📅 ${PR_YELLOW}$(date)\
 ${PR_GREY})${PR_CYAN}${PR_HBAR}${PR_URCORNER}\
 
 ${PR_CYAN}${PR_LLCORNER}${PR_BLUE}${PR_HBAR}(\
