@@ -10,6 +10,7 @@ ZSH_THEME="mario"
 Changing to: robbyrussell
 + kubectl completion zsh
 + kubectl completion zsh
+
 ➜  zsh-stuff git:(main) ✗ git clone git@github.com:MarioMartReq/zsh-stuff.git
 ```
 
@@ -32,7 +33,7 @@ Main file for ZSH. It is not optmized by any means (it might require some change
 Mario's custom ZSH theme. It is a fork from Jonathan theme, but contains some modifications:
 
 - It displays info about the **kubernetes context and namespace** (thanks to [kube-ps1](https://github.com/jonmosco/kube-ps1)).
-- It also shows which conda env is currently active.
+- It also shows which **conda env** is currently active.
 - Complete date with time zone.
 - Some emojis to separate the different info sections 😌.
 
