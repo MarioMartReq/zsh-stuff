@@ -15,15 +15,15 @@ ZSH_THEME="mario"
 
 function change_theme_function {
     echo "Current theme:";
-    if grep -Fx 'ZSH_THEME="mario"' ./.zshrc; then
-        sed -i '' '1,/ZSH_THEME="mario"/ s/ZSH_THEME="mario"/ZSH_THEME="robbyrussell"/g' ./.zshrc;
+    if grep -Fx 'ZSH_THEME="mario"' ~/.zshrc; then
+        sed -i '' '1,/ZSH_THEME="mario"/ s/ZSH_THEME="mario"/ZSH_THEME="robbyrussell"/g' ~/.zshrc;
         echo "Changing to: robbyrussell";
-        source ./.zshrc;
+        source ~/.zshrc;
     else
-        grep -Fx 'ZSH_THEME="robbyrussell"' ./.zshrc;
-        sed -i '' '1,/ZSH_THEME="robbyrussell"/ s/ZSH_THEME="robbyrussell"/ZSH_THEME="mario"/g' ./.zshrc;
+        grep -Fx 'ZSH_THEME="robbyrussell"' ~/.zshrc;
+        sed -i '' '1,/ZSH_THEME="robbyrussell"/ s/ZSH_THEME="robbyrussell"/ZSH_THEME="mario"/g' ~/.zshrc;
         echo "Changing to: mario";
-        source ./.zshrc;
+        source ~/.zshrc;
     fi
 }
 

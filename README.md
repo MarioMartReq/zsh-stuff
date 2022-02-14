@@ -1,10 +1,16 @@
 # Mario's random drawer for oh-my-zsh
 
-Here I maintain a collection of all the random stuff I use with ZSH.
+Here I maintain a collection of the random stuff I use with ZSH.
 
 ```bash
-┌─(~/git-personal/zsh-stuff)──────────────────────────────────(zucchini-nano-0032:monitoring 🤔 Fri Feb 11 16:48:54 WET 2022)─┐
-└─( on main ✭)──> git commit -m "Oasis version updated for #28 store"
+┌─(~/git-personal/zsh-stuff)──────────────────────────(☸️  zucchini-nano-0032:oasis 🐍 base 📅 Mon Feb 14 14:53:30 -01 2022)─┐
+└─( on main)──> changetheme
+Current theme:
+ZSH_THEME="mario"
+Changing to: robbyrussell
++ kubectl completion zsh
++ kubectl completion zsh
+➜  zsh-stuff git:(main) ✗ git clone git@github.com:MarioMartReq/zsh-stuff.git
 ```
 
 ## [.zshrc](.zshrc) file
