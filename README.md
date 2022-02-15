@@ -3,7 +3,7 @@
 Here I maintain a collection of the random stuff I use with ZSH.
 
 ```bash
-┌─(~/git-personal/zsh-stuff)──────────────────────────(☸️  zucchini-nano-0032:oasis 🐍 base 📅 Mon Feb 14 14:53:30 -01 2022)─┐
+┌─(~/git-personal/zsh-stuff)──────────────────────────(☸️  personal-cluster:monitoring 🐍 base 📅 Mon Feb 14 14:53:30 -01 2022)─┐
 └─( on main)──> changetheme
 Current theme:
 ZSH_THEME="mario"
